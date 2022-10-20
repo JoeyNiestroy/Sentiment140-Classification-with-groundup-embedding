@@ -56,7 +56,6 @@ if __name__ == "__main__":
     
     """Reads in Final Dataframe from preprocessing and creates array of all tweets"""
     df = pd.read_csv("Final_Data.csv")
-    df = df[0:100]
     final_array = []
     for sentence in df["Prep_3"]:
         array = eval(sentence)
@@ -103,9 +102,9 @@ if __name__ == "__main__":
     function = partial(negative_sample_gen, unigram_array)
 
     """Functions run on MP"""
-    with Pool(4) as p:
+    with Pool(12) as p:
         train_data_positive = p.map(positive_sample_gen, encoded_sent)
-    with Pool(4) as p:
+    with Pool(12) as p:
         train_data_negative = p.map(function,train_data_positive )
     
     """Minor data alterations"""
