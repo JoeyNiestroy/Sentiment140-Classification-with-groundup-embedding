@@ -4,5 +4,8 @@ Prelabeled tweets dataset was obatained through kaggle, Pre_Processing.py reads 
 This process can be found on Building_Model.py
 
 
-Embedding_visualization.jpeg is a T-SNE visulization of a small subset of vocabulary with [hi,hello,hey] labeled. (See image below)
+Embedding_visualization.jpeg is a T-SNE visulization of a small subset of vocabulary with [hi,hello,hey] labeled. 
+(See image below)
 ![Embedding_visualization](https://user-images.githubusercontent.com/106636917/197554027-45fe2ca4-836d-4fef-bf81-6f58868f3f67.jpeg)
+
+Traditional ML models are currently being explored for classification purpose
