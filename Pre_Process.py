@@ -88,7 +88,7 @@ def lemmatize(lis):
             word = lemmatizer.lemmatize(tup[0], pos = "n")
             final.append(word)
     return final
-
+"""Function made to deal with data corruption in file transfer to HPC"""
 def tagging(tweet):
     try:
         x = pos_tag(tweet)
@@ -101,7 +101,6 @@ def tagging(tweet):
 if __name__ == "__main__":
     df = pd.read_csv("Labeled_Data.csv", encoding='latin-1')
     df.columns = ["Sentiment", "ID", "Date", "Query", "Name", "Tweet"]
-    df = df[1100000:]
     with Pool(12) as p:
         prep_1 = (p.map(pre_process_tweet, df["Tweet"]))
     df["Prep_1"] = prep_1
