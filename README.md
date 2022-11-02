@@ -8,4 +8,4 @@ Embedding_visualization.jpeg is a T-SNE visulization of a small subset of vocabu
 (See image below)
 ![Embedding_visualization](https://user-images.githubusercontent.com/106636917/197554027-45fe2ca4-836d-4fef-bf81-6f58868f3f67.jpeg)
 
-Traitional ML techniques were used for the classification task and logistic regression with a polynimonal kernal (degree =2) preformed the best on test data with an average of accuracy of .72, and False Negatives / Postitive rates were realitvly equal. I'm currently testing NN as a possible model 
+Traitional ML techniques were used for the classification task and logistic regression with a polynimonal kernal (degree =2) preformed the best on test data with an average of accuracy of .72, and False Negatives / Postitive rates were relatively equal. I'm currently testing NN as a possible model 
