@@ -2,7 +2,7 @@
 
 # Overview #
 
-Sentiment Classification model using twitter Sentiment140 dataset and skip-gram embedding 
+Sentiment Classification model using twitter Sentiment140 dataset and skip-gram embedding. This repo also acts a replication of the initial word2vec paper.  
 
 ## Data Preprocessing ##
 
